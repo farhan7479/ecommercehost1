@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useAuth } from "../../context/auth";
 import { Outlet } from "react-router-dom";
 import axios from "axios";
-import Spinner from "../Spinner";
+import Spinner from "../spinner/Spinner";
 
 export default function PrivateRoute() {
   const [ok, setOk] = useState(false);
