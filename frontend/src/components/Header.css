@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #888;
+  }
+  
