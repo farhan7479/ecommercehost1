@@ -25,9 +25,13 @@ app.use(cors(corsOption));
 app.use(express.json());
 app.use(morgan("dev"));
 import authRoutes from "./routes/authRoute.js";
+import categoryRoutes from "./routes/categoryRoute.js";
+import productRoutes from "./routes/productRoute.js";
 
 //routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/category", categoryRoutes);
+app.use("/api/v1/product", productRoutes);
 
 //rest api
 app.get("/", (req, res) => {
