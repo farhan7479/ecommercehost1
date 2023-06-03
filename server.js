@@ -3,7 +3,7 @@ import colors from "colors";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
-import {fileURLPath} from 'url';
+import {fileURLToPath} from 'url';
 import cors from "cors";
 
 //configure env
@@ -12,7 +12,7 @@ dotenv.config();
 //databse config
 connectDB();
 
-const __filename=fileURLPath(import.meta.url);
+const __filename=fileURLToPath(import.meta.url);
 const __dirname=path.dirname(__filename);
 
 //rest object
