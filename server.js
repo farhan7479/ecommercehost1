@@ -12,6 +12,9 @@ dotenv.config();
 //databse config
 connectDB();
 
+const __filename=fileURLPath(import.meta.url);
+const __dirname=path.dirname(__filename);
+
 //rest object
 const app = express();
 
@@ -31,6 +34,7 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoute.js";
 import productRoutes from "./routes/productRoute.js";
 import path from "path";
+import {fileURLPath} from 'url';
 //routes
 
 app.use('*',function(req,res){
