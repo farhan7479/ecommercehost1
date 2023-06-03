@@ -3,7 +3,7 @@ import colors from "colors";
 import dotenv from "dotenv";
 import morgan from "morgan";
 import connectDB from "./config/db.js";
-
+import {fileURLPath} from 'url';
 import cors from "cors";
 
 //configure env
@@ -34,7 +34,7 @@ import authRoutes from "./routes/authRoute.js";
 import categoryRoutes from "./routes/categoryRoute.js";
 import productRoutes from "./routes/productRoute.js";
 import path from "path";
-import {fileURLPath} from 'url';
+
 //routes
 
 app.use('*',function(req,res){
