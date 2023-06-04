@@ -20,7 +20,7 @@ const app = express();
 
 //middelwares
 const corsOption= { 
-    origin:"http://localhost:3000",
+    origin:"https://ecommerce1-2n2o.onrender.com",
     optionSuccessStatus: 200,
 };
 
