@@ -20,7 +20,7 @@ const app = express();
 
 //middelwares
 const corsOption= { 
-    origin:"https://ecommerce1-2n2o.onrender.com",
+    origin:"https://64a80c65f4cdb31181a9c9aa--creative-biscochitos-f5e423.netlify.app",
     optionSuccessStatus: 200,
 };
 
